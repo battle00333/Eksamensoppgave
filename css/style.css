@@ -1,10 +1,32 @@
 *{
     box-sizing: border-box;
     padding: 0;
-body{
+    body{
     font-family: Arial, Helvetica, sans-serif;
 
-    #logo{
+    form{
+        #search, button{
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        border-color: #000;
+        background-color: #ffffff;
+        border-width: 2px;
+        }
+
+        button{
+            text-transform:capitalize
+        }
+    }
+    
+    li{
+        list-style: none;
+        margin: 1rem;
+        margin-left: 0rem;
+        i{
+            margin-right: 1rem;
+        } 
+    }
+
+    .logo{
         text-transform: uppercase;
         font-weight: bold;
         font-size: 1.5em;
@@ -13,7 +35,8 @@ body{
     #banner{
         background-color: #f0e0d0;
         background-size: cover;
-        padding: 0;
+        padding: 1rem;
+        margin: 2rem 0 2rem 0;
 
         header{
             padding: 1rem;
@@ -32,7 +55,7 @@ body{
     .fakebutton{
             padding: 0.5rem 1rem 0.5rem 1rem;
             background-color: #ffffff;
-            width: 15em;
+            padding: 1rem;
             border-width: 0px;
             font-weight: 1000;
             text-transform:uppercase
@@ -40,55 +63,47 @@ body{
 
 
 
-    li{
-        list-style: none;
-        margin: 1rem;
-        margin-left: 0rem;
-        i{
-            margin-right: 1rem;
-        } 
-    }
+
 
     a{
         text-decoration: none;
         color: #000;
     }
 
-    img{
-        width: 100%;
-        min-width: 200px;
+    .flex-button-space{
+        display: flex;
+        justify-content:center;
+        gap: 1rem;
     }
 
-    form{
-        #search, button{
-        padding: 0.5rem 1rem 0.5rem 1rem;
-        border-color: #000;
-        background-color: #ffffff;
-        border-width: 2px;
-        }
-
-        button{
-            text-transform:capitalize
-        }
-    }
     .flex-space-card{
         display: flex;
         gap: 1rem;
         flex-direction: column;
         align-items: center;
+        margin: 1rem 0 1rem 0;
     }
 
     .product-card {
-        min-width:200px;
-        width: 100%;
+        img{
+            min-width: 200px;
+            max-width: 400px;
+            width: 100%;
+        }
     }
-}
+    .review-card {
+        img{
+            width: 100px;
+            border-radius: 100%;
+        }
+    }
+    footer{
+        border-width: 10px;
+    }
+    }
 }
 /*ETTER 1080p*/
 /*TABLET OPP TIL 1080px*/
 /*MOBIL OPP TIL 600px*/
 @media only screen and (max-width: 600px) {
-    *{
-        font-size:5vw;
-    }
 }
