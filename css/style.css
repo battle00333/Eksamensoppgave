@@ -2,104 +2,118 @@
     box-sizing: border-box;
     padding: 0;
     body{
-    font-family: Arial, Helvetica, sans-serif;
+        font-family: Arial, Helvetica, sans-serif;
 
-    form{
-        #search, button{
-        padding: 0.5rem 1rem 0.5rem 1rem;
-        border-color: #000;
-        background-color: #ffffff;
-        border-width: 2px;
+        header form label{
+            visibility: hidden;
+            position: absolute;
         }
 
-        button{
-            text-transform:capitalize
-        }
-    }
-    
-    li{
-        list-style: none;
-        margin: 1rem;
-        margin-left: 0rem;
-        i{
-            margin-right: 1rem;
-        } 
-    }
+        form{
+            #search, button{
+            padding: 0.5rem 1rem 0.5rem 1rem;
+            border-color: #000;
+            background-color: #ffffff;
+            border-style:solid;
+            border-width: 1px;
+            }
 
-    .logo{
-        text-transform: uppercase;
-        font-weight: bold;
-        font-size: 1.5em;
-    }
-
-    #banner{
-        background-color: #f0e0d0;
-        background-size: cover;
-        padding: 1rem;
-        margin: 2rem 0 2rem 0;
-
-        header{
-            padding: 1rem;
-            display: flex;
-            justify-content: center;
-            align-items: right;
-            flex-direction: column;
-            text-align:right;
-            h1, a, p{
-                margin-left: auto;
-
+            button{
+                text-transform:capitalize
             }
         }
-    }
 
-    .fakebutton{
-            padding: 0.5rem 1rem 0.5rem 1rem;
-            background-color: #ffffff;
+        .breadcrumbs{
+            display: flex;
+        }
+        
+        li{
+            list-style: none;
+            margin: 1rem;
+            margin-left: 0rem;
+            i{
+                margin-right: 1rem;
+            } 
+        }
+
+        .logo{
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+
+        #banner{
+            background-color: #f0e0d0;
+            background-size: cover;
             padding: 1rem;
-            border-width: 0px;
-            font-weight: 1000;
-            text-transform:uppercase
+            margin: 2rem 0 2rem 0;
+                gap: 1rem;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                flex-direction: column;
+                text-align:right;
         }
 
+        .fakebutton{
+                padding: 0.5rem 1rem 0.5rem 1rem;
+                background-color: #ffffff;
+                padding: 1rem;
+                border-width: 0px;
+                font-weight: 1000;
+                text-transform:uppercase
+            }
 
 
 
 
-    a{
-        text-decoration: none;
-        color: #000;
-    }
 
-    .flex-button-space{
-        display: flex;
-        justify-content:center;
-        gap: 1rem;
-    }
-
-    .flex-space-card{
-        display: flex;
-        gap: 1rem;
-        flex-direction: column;
-        align-items: center;
-        margin: 1rem 0 1rem 0;
-    }
-
-    .product-card {
-        img{
-            min-width: 200px;
-            max-width: 400px;
-            width: 100%;
+        a{
+            text-decoration: none;
+            color: #000;
         }
-    }
-    .review-card {
-        img{
-            width: 100px;
-            border-radius: 100%;
+
+        .flex-button-space{
+            display: flex;
+            justify-content:center;
+            gap: 1rem;
         }
-    }
-    footer{
-        border-width: 10px;
-    }
+
+        .flex-space-card{
+            display: flex;
+            gap: 1rem;
+            flex-direction: column;
+            align-items: center;
+            margin: 1rem 0 1rem 0;
+        }
+
+        .product-card {
+            img{
+                min-width: 200px;
+                max-width: 400px;
+                width: 100%;
+            }
+        }
+
+        .category-card {
+            max-width: 386px;
+            border-style: solid;
+            border-width: 1px;
+            padding: 6rem;
+            border-radius: 3px;
+            text-align: center;
+            margin: 1rem;
+        }
+
+        .review-card {
+            img{
+                width: 100px;
+                border-radius: 100%;
+            }
+        }
+        footer{
+            border-width: 10px;
+        }
     }
 }
 /*ETTER 1080p*/

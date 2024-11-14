@@ -10,22 +10,22 @@
     <link href="ikoner/css/solid.css" rel="stylesheet">
     <!-- Kobler til font-awesome-->
     <link rel="stylesheet" href="css/style.css"> 
-    <title>Mal</title>
+    <title>Produktside</title>
 </head>
 <body>
     <header>
         <form>
-            <label for="search"></label>
+            <label for="search">Søk:</label>
             <input type="search" placeholder="Her kan du søke" id="search">
             <button type="submit" ><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
         <nav>
             <ul>
                 <li><a href="forside.html">Home</a></li>
-                <li><a href="forside.html#products">Produkter</a></li>
+                <li><a href="forside.html#Products">Produkter</a></li>
                 <li><h1><a class="logo" href="forside.html">LOGO</a></h1></li>
                 <li><a href="forside.html#categories">Kategorier</a></li>
-                <li><a href="#ontacts">Kontakt Oss</a></li>
+                <li><a href="#contacts">Kontakt Oss</a></li>
                 <li><i class="fa-regular fa-user"></i></li>
                 <li><i class="fa-regular fa-heart"></i></li>
                 <li><a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
@@ -33,8 +33,71 @@
         </nav>
     </header>
     <main>
+        <nav>
+            <ul class="breadcrumbs">
+                <li><a href="forside.html">Hjem <i class="fa-solid fa-greater-than"></i></a></li>
+                <li><a href="forside.html#categories">Kategori <i class="fa-solid fa-greater-than"></i></a></li>
+                <li><a href="#"><b>Produktnavn</b></a></li>
+
+            </ul>
+        </nav>
+        <section>
+            <picture>
+                <img src="https://picsum.photos/400/400" alt="Beskrivende tekst for bilde">
+            </picture>
+            <picture>
+                <img src="https://picsum.photos/400/400" alt="Beskrivende tekst for bilde">
+            </picture>
+            <picture>
+                <img src="https://picsum.photos/400/400" alt="Beskrivende tekst for bilde">
+            </picture>
+            <picture>
+                <img src="https://picsum.photos/400/400" alt="Beskrivende tekst for bilde">
+            </picture>
+            <h3>Produktnavn</h3>
+            <a href="#"><u>Merkenavn</u></a>
+            <p>499,99 kr inkl. mva.</p>
+            <p>Farge: <b>sort</b></p>
+        </section>
     </main>
     <aside>
+        <h2>Liknende Produkter</h2>
+        <article class="product-card">
+            <a href="product.html">
+            <picture>
+                <img src="https://picsum.photos/400/400" alt="Beskrivende tekst for bilde">
+            </picture>
+            <h3>Produktnavn</h3>
+            <p>499,98 kr</p>
+            </a>
+        </article>
+        <article class="product-card">
+            <a href="product.html">
+            <picture>
+                <img src="https://picsum.photos/400/400" alt="Beskrivende tekst for bilde">
+            </picture>
+            <h3>Produktnavn</h3>
+            <p>499,98 kr</p>
+            </a>
+        </article>
+        <article class="product-card">
+            <a href="product.html">
+            <picture>
+                <img src="https://picsum.photos/400/400" alt="Beskrivende tekst for bilde">
+            </picture>
+            <h3>Produktnavn</h3>
+            <p>499,98 kr</p>
+            </a>
+        </article>
+        <article class="product-card">
+            <a href="product.html">
+            <picture>
+                <img src="https://picsum.photos/400/400" alt="Beskrivende tekst for bilde">
+            </picture>
+            <h3>Produktnavn</h3>
+            <p>499,98 kr</p>
+            </a>
+        </article>
     </aside>
     <footer id="contacts">
         <section>

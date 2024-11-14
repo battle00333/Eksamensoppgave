@@ -1,0 +1,86 @@
+Max 5 Div'er
+Semantiske tagger
+Bruke Lorem ipsum tekst
+
+globalt{
+    header{
+
+    }
+    footer{
+
+    }
+}
+forside.html{
+    section-Banner{
+        Innhold skal være høyrestilt
+        Overskrift, Ingress
+        Lenke
+    }
+    section-Produktkort{
+        Filtreringsknapper
+        6 Produktkort{
+            Bilde
+            Produktnavn
+            Pris
+        } Skal ligge under hverandre
+
+    }
+    section-Kategorier{
+        Overskrift
+        Ingress
+        Kategorikort{
+
+        }
+    }
+    section-reviews{
+        Overskrift
+        4 Anmeldelser {
+            profilbilde
+            overskrift (navn)
+            tekstparagraf
+        } Venstrestilt
+    }
+}
+
+product.html{
+    Brødsmulestid
+    Main{
+        område med produktbilder, 1 stort og 3 små
+        område med produktnavn som header, lenke til merke, pris, fargeinformasjon
+    }
+    Aside{
+        4 Produktkort fra forside.html
+    }
+}
+
+checkout.html{
+    section-shoppingbag{
+        minimum 2 produtkort{
+            bilde, produktnavn, pris, farge
+        }
+    }
+    section-orderform{
+        fornavn, etternavn, gateaddresse, postnummer, poststed, large-knapp, avbryt-knapp.
+        RIKTIG ATTRIBUTTER
+    }
+    section-delivery{
+        skjema{
+            (SINGLE CHOICE) valg for levering{ expres hjem, express utleveringssted, standard hjemlevering}
+            label for lavere krav
+        }
+    }
+    section-payment{
+       skjema{
+        kortnummer, utløpsdato, CVC,CVV, knapp.
+       } eksempel: https://github.com/ackarlse/eksamen24web/blob/main/eksamen/minstekrav/kasse.png
+       Hva som skal betales, betalingsmåte, pengebeløp
+       MÅ INNEHOLDE: "Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fullstendige. Leverandøren forbeholder seg retten til å heve eller avslutte avtaleforholdet dersom det foreligger uriktige eller ufullstendige opplysninger."
+    checkbox for samtykelse
+    checkbox for nyhetsbrev
+    }
+}
+
+Lenking{
+    Produktkort skal lenkes til product.html
+    Handlevogn skal lenkes til checkout.html
+}

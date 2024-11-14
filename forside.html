@@ -14,17 +14,17 @@
 </head>
 <body>
     <header>
-        <form id="searchbar">
-            <label for="search"></label>
+        <form>
+            <label for="search">Søk:</label>
             <input type="search" placeholder="Her kan du søke" id="search">
             <button type="submit" ><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#Products">Produkter</a></li>
-                <li><h1><a class="logo" href="index.html">LOGO</a></h1></li>
-                <li><a href="index.html#categories">Kategorier</a></li>
+                <li><a href="forside.html">Home</a></li>
+                <li><a href="forside.html#Products">Produkter</a></li>
+                <li><h1><a class="logo" href="forside.html">LOGO</a></h1></li>
+                <li><a href="forside.html#categories">Kategorier</a></li>
                 <li><a href="#contacts">Kontakt Oss</a></li>
                 <li><i class="fa-regular fa-user"></i></li>
                 <li><i class="fa-regular fa-heart"></i></li>
@@ -34,11 +34,9 @@
     </header>
     <main>
         <section id="banner">
-            <header>
                 <h2>Ut enim ad minima veniam, quis nostrum exercitationem</h2>
                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
                 <a class="fakebutton" href="#">Få en prøve pakke i dag</a>
-            </header>
         </section>
         <section >
             <h2>Våre mest populære produkter</h2>
@@ -48,87 +46,115 @@
                 <button>Nye produkter</button>
                 <button>Topp sellere</button>
             </form>
-            <section class="flex-space-card">
-            <article class="product-card">
-                <picture>
-                    <img src="https://picsum.photos/400/400" alt="Beskrivende tekst for bilde">
-                </picture>
-                <a href=""><h3>Produktnavn</h3></a>
-                <p>876,00 kr</p>
-            <article class="product-card">
-                <picture>
-                    <img src="https://picsum.photos/400/400" alt="Beskrivende tekst for bilde">
-                </picture>
-                <a href=""><h3>Produktnavn</h3></a>
-                <p>876,00 kr</p>
-            </article>
-            <article class="product-card">
-                <picture>
-                    <img src="https://picsum.photos/400/400" alt="Beskrivende tekst for bilde">
-                </picture>
-                <a href=""><h3>Produktnavn</h3></a>
-                <p>876,00 kr</p>
-            </article>
-            <article class="product-card">
-                <picture>
-                    <img src="https://picsum.photos/400/400" alt="Beskrivende tekst for bilde">
-                </picture>
-                <a href=""><h3>Produktnavn</h3></a>
-                <p>876,00 kr</p>
-            </article>
-            <article class="product-card">
-                <picture>
-                    <img src="https://picsum.photos/400/400" alt="Beskrivende tekst for bilde">
-                </picture>
-                <a href=""><h3>Produktnavn</h3></a>
-                <p>876,00 kr</p>
-            </article>
-            <article class="product-card">
-                <picture>
-                    <img src="https://picsum.photos/400/400" alt="Beskrivende tekst for bilde">
-                </picture>
-                <a href=""><h3>Produktnavn</h3></a>
-                <p>876,00 kr</p>
-            </article>
+            <section id="products" class="flex-space-card">
+                <article class="product-card">
+                    <a href="product.html">
+                    <picture>
+                        <img src="https://picsum.photos/400/400" alt="Beskrivende tekst for bilde">
+                    </picture>
+                    <h3>Produktnavn</h3>
+                    <p>499,98 kr</p>
+                    </a>
+                </article>
+                <article class="product-card">
+                    <a href="product.html">
+                    <picture>
+                        <img src="https://picsum.photos/400/400" alt="Beskrivende tekst for bilde">
+                    </picture>
+                    <h3>Produktnavn</h3>
+                    <p>499,98 kr</p>
+                    </a>
+                </article>
+                <article class="product-card">
+                    <a href="product.html">
+                    <picture>
+                        <img src="https://picsum.photos/400/400" alt="Beskrivende tekst for bilde">
+                    </picture>
+                    <h3>Produktnavn</h3>
+                    <p>499,98 kr</p>
+                    </a>
+                </article>
+                <article class="product-card">
+                    <a href="product.html">
+                    <picture>
+                        <img src="https://picsum.photos/400/400" alt="Beskrivende tekst for bilde">
+                    </picture>
+                    <h3>Produktnavn</h3>
+                    <p>499,98 kr</p>
+                    </a>
+                </article>
+                <article class="product-card">
+                    <a href="product.html">
+                    <picture>
+                        <img src="https://picsum.photos/400/400" alt="Beskrivende tekst for bilde">
+                    </picture>
+                    <h3>Produktnavn</h3>
+                    <p>499,98 kr</p>
+                    </a>
+                </article>
+                <article class="product-card">
+                    <a href="product.html">
+                    <picture>
+                        <img src="https://picsum.photos/400/400" alt="Beskrivende tekst for bilde">
+                    </picture>
+                    <h3>Produktnavn</h3>
+                    <p>499,98 kr</p>
+                    </a>
+                </article>
            </section>
         </section>
-        <section>
+        <section id="categories" class="flex-space-card">
             <h2>Våre mest populære kategorier</h2>
+            <article class="category-card">
+                <h3>Kategori N</h3>
+            </article>
+            <article class="category-card">
+                <h3>Kategori N</h3>
+            </article>
+            <article class="category-card">
+                <h3>Kategori N</h3>
+            </article>
+            <article class="category-card">
+                <h3>Kategori N</h3>
+            </article>
+            <article class="category-card">
+                <h3>Kategori N</h3>
+            </article>
         </section>
         <section>
             <h2>Anmeldelser</h2>
             <article class="review-card">
                 <picture>
-                    <img src="img/Rubiks Qube.png" alt="Rubiks kube med sort backgrunn">
+                    <img src="img/Rubiksqube.png" alt="Rubiks kube med sort backgrunn">
                 </picture>
-                <a href=""><h4>Ruben Kubiks</h4></a>
+                <h3>Ruben Kubiks</h3>
                 <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
                     atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,
                      similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
             </article>
             <article class="review-card">
                 <picture>
-                    <img src="img/Rubiks Qube.png" alt="Rubiks kube med sort backgrunn">
+                    <img src="img/Rubiksqube.png" alt="Rubiks kube med sort backgrunn">
                 </picture>
-                <a href=""><h4>Ruben Kubiks</h4></a>
+                <h3>Ruben Kubiks</h3>
                 <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
                     atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,
                      similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
             </article>
             <article class="review-card">
                 <picture>
-                    <img src="img/Rubiks Qube.png" alt="Rubiks kube med sort backgrunn">
+                    <img src="img/Rubiksqube.png" alt="Rubiks kube med sort backgrunn">
                 </picture>
-                <a href=""><h4>Ruben Kubiks</h4></a>
+                <h3>Ruben Kubiks</h3>
                 <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
                     atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,
                      similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
             </article>
             <article class="review-card">
                 <picture>
-                    <img src="img/Rubiks Qube.png" alt="Rubiks kube med sort backgrunn">
+                    <img src="img/Rubiksqube.png" alt="Rubiks kube med sort backgrunn">
                 </picture>
-                <a href=""><h4>Ruben Kubiks</h4></a>
+                <h3>Ruben Kubiks</h3>
                 <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
                     atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,
                      similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
@@ -139,11 +165,11 @@
     </aside>
     <footer id="contacts">
         <section>
-            <h4><a class="logo" href="index.html">logo</a></h4>
+            <h2><a class="logo" href="forside.html">logo</a></h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </section>
         <section>
-            <h4>Kontakt</h4>
+            <h3>Kontakt</h3>
             <ul>
                 <li><i class="fa-solid fa-location-dot"></i><b>Addresse:</b> B R A veien 4, 1757 Halden</li>
                 <li><i class="fa-solid fa-phone"></i><b>Telefon:</b> 69 60 80 00</li>
@@ -152,15 +178,16 @@
             </ul>
         </section>
         <section>
-            <h4>Snarveier</h4>
+            <h3>Snarveier</h3>
             <ul>
-                <li><a href="index.html#Products">Produkter</a></li>
-                <li><a href="index.html#categories">Kategorier</a></li>
+                <li><a href="forside.html#products">Produkter</a></li>
+                <li><a href="forside.html#categories">Kategorier</a></li>
                 <li><a href="#contacts">Kontakt Oss</a></li>
+                <li><a href="Tilgjengelighetserklæring UU.pdf">Tilgjengelighetserklæering</a></li>
             </ul>
         </section>
         <section>
-            <h4>Sosiale medier</h4>
+            <h3>Sosiale medier</h3>
             <ul>
                 <li><a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i>Instagram</a></li>
                 <li><a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i>Facebook</a></li>
