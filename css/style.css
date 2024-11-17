@@ -10,7 +10,7 @@
         }
 
         form{
-            #search, button{
+            #search, button, input{
             padding: 0.5rem 1rem 0.5rem 1rem;
             border-color: #000;
             background-color: #ffffff;
@@ -120,4 +120,10 @@
 /*TABLET OPP TIL 1080px*/
 /*MOBIL OPP TIL 600px*/
 @media only screen and (max-width: 600px) {
+    input[type=text],[type=number],[type=date]{
+        width:100%;
+    }
+    label b{
+        width:200px;
+    }
 }
