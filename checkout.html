@@ -7,7 +7,7 @@
     <link href="ikoner/css/fontawesome.css" rel="stylesheet">
     <link href="ikoner/css/brands.css" rel="stylesheet">
     <link href="ikoner/css/solid.css" rel="stylesheet">
-    <link href="ikoner/css/solid.css" rel="stylesheet">
+    <link href="ikoner/css/regular.css" rel="stylesheet">
     <!-- Kobler til font-awesome-->
     <link rel="stylesheet" href="css/style.css"> 
     <title>Betaling</title>
@@ -33,13 +33,14 @@
         </nav>
     </header>
     <main>
+        <h2>Kasse</h2>
         <section>
-            <h2 class="uppercase">1. Shoppingbagen din</h2>
+            <h3 class="uppercase">1. Shoppingbagen din</h3>
             <article class="product-card">
                 <picture>
                     <img src="https://picsum.photos/400/400" alt="Beskrivende tekst for bilde">
                 </picture>
-                <h3>Produktnavn</h3>
+                <h4>Produktnavn</h4>
                 <p>499,98 kr</p>
                 <p>Farge: <b>sort</b></p>
             </article>
@@ -47,7 +48,7 @@
                 <picture>
                     <img src="https://picsum.photos/400/400" alt="Beskrivende tekst for bilde">
                 </picture>
-                <h3>Produktnavn</h3>
+                <h4>Produktnavn</h4>
                 <p>499,98 kr</p>
                 <p>Farge: <b>sort</b></p>
             </article>
@@ -55,13 +56,13 @@
                 <picture>
                     <img src="https://picsum.photos/400/400" alt="Beskrivende tekst for bilde">
                 </picture>
-                <h3>Produktnavn</h3>
+                <h4>Produktnavn</h4>
                 <p>499,98 kr</p>
                 <p>Farge: <b>sort</b></p>
             </article>
         </section>
         <section>
-            <h2 class="uppercase">2. Dine opplysninger</h2>
+            <h3 class="uppercase">2. Dine opplysninger</h3>
             <form>
                 <input type="text" placeholder="Fornavn*">
                 <input type="text" placeholder="Etternavn*">
@@ -72,18 +73,16 @@
             </form>
         </section>
         <section>
-            <h2 class="uppercase">3. Levering</h2>
-            <form>
-                <input type="radio" id="Exp-Home" name="Delivery" value="Express Home">
-                <label for="Exp-Home"><b>Express Hjemmelevering</b></label>
-                <input type="radio" id="Exp-Spot" name="Delivery" value="Express Delivery">
-                <label for="Exp-Spot"><b>Express Pakke til utleveringssted</b></label>
-                <input type="radio" id="Default-Home" name="Delivery" value="Default Home">
-                <label for="Default-Home"><b>Standard Hjemmelevering</b></label>
+            <h3 class="uppercase">3. Levering</h3>
+            <form>      
+                <label class="bold"><input type="radio" name="Delivery" value="Express Home">Express Hjemmelevering</label>
+                <label class="bold"><input type="radio" name="Delivery" value="Express Delivery">Express Pakke til utleveringssted</label>  
+                <label class="bold"><input type="radio" id="Default-Home" name="Delivery" value="Default Home">Standard Hjemmelevering</label>
             </form>
         </section>
         <section>
-            <h2 class="uppercase">4. Betaling</h2>
+            <h3 class="uppercase">4. Betaling</h3>
+            <p class="bold">BETAL MED KORT</p>
             <form>
                 <label for="cardnumber">Kortnummer</label>
                 <input type="number" id="cardnumber" placeholder="1234********5678">
@@ -91,27 +90,26 @@
                 <input type="date" id="expiredate">
                 <label for="CVCCVV">CVC/CVV</label>
                 <input type="number" id="CVCCVV" placeholder="CVC/CVV">
-                <p>t</p>
-                <p>t</p>
+                <p class="bold">Å betale inkl. mva.</p>
+                <p class="bold">1 499 kr</p>
                 <input type="submit" value="Fullfør kjøp">
                 <p>Du bekrefter herved at opplysningene og dokumentene du har
                     oppgitt er korrekte og fullstendige. Leverandøren forbeholder seg
                     retten til å heve eller avslutte avtaleforholdet dersom det foreligger
                     uriktige eller ufullstendige opplysninger.</p>
-                <input type="checkbox">
-                <input type="checkbox">
+                
+                <label><input type="checkbox">ja, jeg godtar vilkårene</label>
+                <label><input type="checkbox">Ja takk! Send nyhetsbrev til meg</label>
             </form>
         </section>
     </main>
-    <aside>
-    </aside>
     <footer id="contacts">
         <section>
-            <h4><a class="logo" href="forside.html">logo</a></h4>
+            <h2><a class="logo" href="forside.html">logo</a></h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </section>
         <section>
-            <h4>Kontakt</h4>
+            <h3>Kontakt</h3>
             <ul>
                 <li><i class="fa-solid fa-location-dot"></i><b>Addresse:</b> B R A veien 4, 1757 Halden</li>
                 <li><i class="fa-solid fa-phone"></i><b>Telefon:</b> 69 60 80 00</li>
@@ -120,16 +118,16 @@
             </ul>
         </section>
         <section>
-            <h4>Snarveier</h4>
+            <h3>Snarveier</h3>
             <ul>
                 <li><a href="forside.html#products">Produkter</a></li>
                 <li><a href="forside.html#categories">Kategorier</a></li>
                 <li><a href="#contacts">Kontakt Oss</a></li>
-                <li><a href="Tilgjengelighetserklæring UU.pdf">Tilgjengelighetserklæering</a></li>
+                <li><a href="Tilgjengelighetserklæring_UU.pdf">Tilgjengelighetserklæering</a></li>
             </ul>
         </section>
         <section>
-            <h4>Sosiale medier</h4>
+            <h3>Sosiale medier</h3>
             <ul>
                 <li><a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i>Instagram</a></li>
                 <li><a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i>Facebook</a></li>

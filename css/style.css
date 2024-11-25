@@ -4,29 +4,8 @@
     body{
         font-family: Arial, Helvetica, sans-serif;
 
-        header form label{
-            visibility: hidden;
-            position: absolute;
-        }
+        /*Globalt*/
 
-        form{
-            #search, button, input{
-            padding: 0.5rem 1rem 0.5rem 1rem;
-            border-color: #000;
-            background-color: #ffffff;
-            border-style:solid;
-            border-width: 1px;
-            }
-
-            button{
-                text-transform:capitalize
-            }
-        }
-
-        .breadcrumbs{
-            display: flex;
-        }
-        
         li{
             list-style: none;
             margin: 1rem;
@@ -36,10 +15,57 @@
             } 
         }
 
+        a{
+            text-decoration: none;
+            color: #000;
+        }
+
+        form{
+            button, input, .fakebutton, #search{
+            padding: 1rem 1rem 1rem 1rem;
+            border-color: #000;
+            background-color: #ffffff;
+            border-style:solid;
+            border-width: 1px;
+            margin: 0.5rem 0 0.5rem 0;
+            }
+
+            button{
+                text-transform:capitalize;
+            }
+
+            input[type=text],[type=number],[type=date]{
+                width:100%;
+                display:block;
+            }
+
+            input[type=reset],[type=button]{
+                display:block;
+            }
+
+            label{
+                display:block;
+                margin-right:auto;
+                input{
+                    margin-right: 1rem;
+                }
+            }
+        }
+
         .logo{
             text-transform: uppercase;
             font-weight: bold;
             font-size: 1.5em;
+        }
+
+        .bold{
+            font-weight: bold;
+        }
+
+        /*Forside.html*/
+        header form label{
+            visibility: hidden;
+            position: absolute;
         }
 
         #banner{
@@ -55,23 +81,51 @@
                 text-align:right;
         }
 
-        .fakebutton{
-                padding: 0.5rem 1rem 0.5rem 1rem;
-                background-color: #ffffff;
-                padding: 1rem;
-                border-width: 0px;
-                font-weight: 1000;
-                text-transform:uppercase
-            }
-
-
-
-
-
-        a{
-            text-decoration: none;
-            color: #000;
+        .banner-link{
+            padding: 0.5rem 1rem 0.5rem 1rem;
+            background-color: #ffffff;
+            padding: 1rem;
+            border-width: 0px;
+            font-weight: 1000;
+            text-transform:uppercase
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /*Product.html*/
+         
+        picture{
+            display:block;
+        }
+        
+        .breadcrumbs{
+            display: flex;
+        }
+        
+
+
+        /*Checkout.html*/
+        
+
+        
+
+
+
+
+
+
+
+
 
         .flex-button-space{
             display: flex;
@@ -112,18 +166,11 @@
             }
         }
         footer{
-            border-width: 10px;
+            margin-top: 3rem;
+            padding-top: 1rem;
+            border-top-style:solid;
+            border-top-width: 1px;
+            border-top-color: #d0d0d0;
         }
-    }
-}
-/*ETTER 1080p*/
-/*TABLET OPP TIL 1080px*/
-/*MOBIL OPP TIL 600px*/
-@media only screen and (max-width: 600px) {
-    input[type=text],[type=number],[type=date]{
-        width:100%;
-    }
-    label b{
-        width:200px;
     }
 }
