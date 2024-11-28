@@ -1,6 +1,9 @@
 *{
     box-sizing: border-box;
     padding: 0;
+
+
+
     body{
         font-family: Arial, Helvetica, sans-serif;
 
@@ -36,15 +39,15 @@
 
             input[type=text],[type=number],[type=date]{
                 width:100%;
-                display:block;
+                display: block;
             }
 
             input[type=reset],[type=button]{
-                display:block;
+                display: block;
             }
 
             label{
-                display:block;
+                display: block;
                 margin-right:auto;
                 input{
                     margin-right: 1rem;
@@ -62,14 +65,22 @@
             font-weight: bold;
         }
 
-        /*Forside.html*/
+        footer{
+            margin-top: 3rem;
+            padding-top: 1rem;
+            border-top-style:solid;
+            border-top-width: 1px;
+            border-top-color: #d0d0d0;
+        }
+
+        /*index.html*/
         header form label{
             visibility: hidden;
             position: absolute;
         }
 
         #banner{
-            background-color: #f0e0d0;
+            background-color: #d0d0d0;
             background-size: cover;
             padding: 1rem;
             margin: 2rem 0 2rem 0;
@@ -90,46 +101,10 @@
             text-transform:uppercase
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-        /*Product.html*/
-         
-        picture{
-            display:block;
-        }
-        
-        .breadcrumbs{
-            display: flex;
-        }
-        
-
-
-        /*Checkout.html*/
-        
-
-        
-
-
-
-
-
-
-
-
-
         .flex-button-space{
             display: flex;
             justify-content:center;
+            flex-wrap: wrap;
             gap: 1rem;
         }
 
@@ -143,9 +118,9 @@
 
         .product-card {
             img{
+                width:100%;
                 min-width: 200px;
                 max-width: 400px;
-                width: 100%;
             }
         }
 
@@ -161,16 +136,34 @@
 
         .review-card {
             img{
-                width: 100px;
+                max-width:150px;
                 border-radius: 100%;
             }
         }
-        footer{
-            margin-top: 3rem;
-            padding-top: 1rem;
-            border-top-style:solid;
-            border-top-width: 1px;
-            border-top-color: #d0d0d0;
+
+        /*product.html*/
+
+        .breadcrumbs{
+            display: flex;
+        }
+
+        .gallery{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .similar-products{
+            .product-card{
+                width:100%;
+            }
+        }
+
+        /*checkout.html*/
+
+        .shoppingbag{
+            article{
+                width:100%;
+            }
         }
     }
 }
